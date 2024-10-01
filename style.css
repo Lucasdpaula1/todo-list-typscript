@@ -1,0 +1,53 @@
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+ul {
+  list-style: none;
+  gap: 10px;
+
+  padding: 0;
+}
+
+.btnblue {
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.btnblue:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+.contanier {
+  display: flex;
+  padding: 100px 50px;
+  width: 50%;
+  border-radius: 20px;
+  flex-flow: column;
+  box-shadow: 0px 0px 9px -3px rgba(0, 0, 0, 0.52);
+
+  & h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  & .tarefa {
+    display: flex;
+    gap: 2rem;
+
+    & input {
+      align-self: center;
+      border: none;
+    }
+    & input:focus {
+      outline: none;
+    }
+  }
+}
+.active {
+  color: red;
+}
